@@ -45,34 +45,18 @@ Está pensado como *landing one-page* + una página secundaria de modalidad pres
 
 > HTMX requiere servir los archivos con un servidor HTTP real (los `hx-get` no funcionan con `file://`).
 
-## Publicarlo en https://entretramas.github.io/
+## Publicado en https://entre-tramas.github.io/
 
-Decisión: se publica como *user-site* de la cuenta GitHub **entretramas** (a crear).
+El login real de la cuenta GitHub es **entre-tramas** (con guion), así que el
+user-site vive en <https://entre-tramas.github.io/> y el repo en
+`entre-tramas/entre-tramas.github.io` (Pages servido desde `main` / raíz).
 
-1. Crear la cuenta GitHub `entretramas` (verificación por email incluida).
-2. Loguearla en la CLI y dejar la actual como alternativa:
+Estado: publicado ✓ — creado y empujado con `gh` (cuenta active entre-tramas,
+clave SSH `~/.ssh/github_entretramas` registrada como auth + signing en la cuenta).
 
-   ```bash
-   gh auth login                   # cuenta nueva: entretramas (device flow)
-   gh auth switch -u entretramas
-   ```
-
-3. Publicar (crea el repo y hace push del contenido actual):
-
-   ```bash
-   gh repo create entretramas/entretramas.github.io --public --source=. --remote=origin --push
-   ```
-
-4. Activar Pages servido desde `main` / raíz:
-
-   ```bash
-   gh api -X POST repos/entretramas/entretramas.github.io/pages \
-        -f "source[branch]=main" -f "source[path]=/"
-   ```
-
-5. Al minuto: el sitio queda en <https://entretramas.github.io>.
-
-> Los `canonical`, `sitemap.xml` y `robots.txt` ya apuntan a esa URL: publicar desde la cuenta nueva no requiere retocar el sitio.
+Si más adelante se renombra la cuenta a `entretramas` (Settings → Change
+username), la URL pasa a <https://entretramas.github.io/> y basta actualizar
+`canonical`, `sitemap.xml`, `robots.txt` y este README.
 ## Personalización rápida
 
 Todo el look se controla con las variables al inicio de `assets/css/site.css`:
@@ -97,7 +81,7 @@ Pendiente de completar por el cliente (buscar `<-- FIXME` o los literales):
 
 ## SEO / datos
 
-- `lang="es-AR"`, canonical hacia `https://entretramas.github.io/`
+- `lang="es-AR"`, canonical hacia `https://entre-tramas.github.io/`
 - Open Graph completo (title / description / locale `es_AR`)
 - JSON-LD `@type: Course` (club gratuito) + `FAQPage` en la home
 - `sitemap.xml` y `robots.txt` listos

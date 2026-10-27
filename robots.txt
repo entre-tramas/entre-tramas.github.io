@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /partials/
 
-Sitemap: https://entretramas.github.io/sitemap.xml
+Sitemap: https://entre-tramas.github.io/sitemap.xml
