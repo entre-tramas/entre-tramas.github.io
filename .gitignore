@@ -1,0 +1,9 @@
+.agents/
+.claude/
+.mcp.json
+405feb4d281d80778276deb4764da98d.md
+Paletacolores.jpg
+.DS_Store
+*.log
+node_modules/
+skills-lock.json
