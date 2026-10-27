@@ -39,7 +39,7 @@ Está pensado como *landing one-page* + una página secundaria de modalidad pres
 
 ```bash
 # en la raíz del repo
-python3 -m http.server 8080
+./serve.sh   # http://localhost:8080 (NO_OPEN=1 ./serve.sh en scripts)
 # → http://localhost:8080
 ```
 
