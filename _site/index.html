@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entre-Tramas · Club de lectura de cuentos (virtual y en La Plata)</title>
+
+  <meta name="description" content="Club de lectura de cuentos de ficción: un cuento cada semana con material de análisis e infografía, y encuentros quincenales por videollamada. Probá gratis la muestra y sumate por Instagram.">
+  <link rel="canonical" href="https://entre-tramas.github.io/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f4ede0">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Entre-Tramas">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:url" content="https://entre-tramas.github.io/">
+  <meta property="og:title" content="Entre-Tramas · Club de lectura de cuentos">
+  <meta property="og:description" content="Un cuento cada semana con material de análisis e infografía, y encuentros quincenales para compartir lo que cada uno comprendió.">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Entre-Tramas · Club de lectura de cuentos">
+  <meta name="twitter:description" content="Un cuento cada semana, materiales de análisis y encuentros quincenales. Leé en compañía.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Tipografías: Fraunces (display) + Inter (texto) + JetBrains Mono (rótulos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/site.css">
+
+  <!-- HTMX con protección: solo acepta pedidos a este mismo origen -->
+  <meta name="htmx-config" content='{"selfRequestsOnly":true}'>
+  <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.4/dist/htmx.min.js" defer></script>
+
+  <!-- Datos estructurados: organización y preguntas frecuentes -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Entre-Tramas",
+        "url": "https://entre-tramas.github.io/",
+        "description": "Club de lectura de cuentos de ficción para adultos: un cuento por semana con material de análisis e infografía, y encuentros quincenales virtuales.",
+        "sameAs": ["https://www.instagram.com/club.entre.tramas/"]
+      },
+      {
+        "@type": "WebSite",
+        "name": "Entre-Tramas",
+        "url": "https://entre-tramas.github.io/",
+        "inLanguage": "es-AR"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+      "@type": "Question",
+      "name": "¿El club es para quien ya lee o para empezar?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Para quien ya lee y quiere profundizar: no está pensado como iniciación a la lectura. Con leer el cuento de la semana y llevar las impresiones al encuentro alcanza." }
+    },{
+      "@type": "Question",
+      "name": "¿Qué hay que hacer antes de cada encuentro?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Leer el cuento y los materiales por cuenta propia. En el encuentro, cada uno comparte lo que comprendió; no se lee en voz alta ni hay entregas." }
+    },{
+      "@type": "Question",
+      "name": "¿Qué incluye la muestra gratuita?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Un cuento completo con su material de análisis y su infografía, más un video breve de presentación del club. Todo sin costo, sin otro paso que un mensaje directo." }
+    },{
+      "@type": "Question",
+      "name": "¿Cómo se paga el club?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A mano: se consulta por Instagram, se confirman las condiciones y se coordina la cuota. No hay pasarela de pago en esta página." }
+    },{
+      "@type": "Question",
+      "name": "¿Y la modalidad presencial en La Plata?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Se está armando un grupo reducido con personas conocidas o recomendadas, con té y algo rico. Formato, frecuencia y precio siguen en definición: quien le interese puede dejar su nombre por Instagram." }
+    },{
+      "@type": "Question",
+      "name": "¿Cuándo arranca?",
+      "acceptedAnswer": { "@type": "Answer", "text": "La fecha todavía no está cerrada. La manera más simple de enterarse primero es seguir el club en Instagram: la muestra gratuita llega antes que el primer mes." }
+    }]
+}
+</script>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- ================= NAVEGACIÓN ================= -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="nav-brand" href="#inicio">Entre<span class="nav-brand-word">-Tramas</span>.</a>
+    <nav class="nav-links" aria-label="Secciones">
+      <a class="nav-link" href="#seleccion">La selección</a>
+      <a class="nav-link" href="#como-funciona">Cómo funciona</a>
+      <a class="nav-link" href="#modalidades">Modalidades</a>
+      <a class="nav-link" href="#preguntas">Preguntas</a>
+    </nav>
+    <a class="btn btn--ink btn--sm nav-cta" href="https://www.instagram.com/club.entre.tramas/" rel="noopener" target="_blank">Instagram ↗</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <svg class="hero-threads" viewBox="0 0 520 300" fill="none" aria-hidden="true">
+      <path d="M10 60 C 140 30, 380 150, 510 90" stroke="#d9cdb3" stroke-width="1.5"/>
+      <path d="M0 170 C 160 130, 360 240, 520 180" stroke="#b8872a" stroke-width="1.5"/>
+      <path d="M40 260 C 200 230, 340 120, 500 260" stroke="#8a2a1f" stroke-width="1.5"/>
+    </svg>
+
+    <div class="hero-copy">
+      <p class="eyebrow">Un club de lectura virtual · Cuentos de ficción</p>
+      <h1>Un club para leer cuentos <em>entre todos</em>.</h1>
+      <p class="lede">Cada semana llega un cuento nuevo, acompañado de un material de análisis y una infografía. Cada quince días, un encuentro para compartir lo que cada uno comprendió: la misma historia, leída por varios, se entiende más hondo.</p>
+
+      <div class="hero-ctas">
+        <a class="btn btn--ink" href="#muestra">Pedí la muestra gratuita</a>
+        <a class="btn btn--ghost" href="#como-funciona">Ver cómo funciona</a>
+      </div>
+
+      <div class="hero-chips"><span class="chip"><span class="dot"></span>4 cuentos por mes</span><span class="chip"><span class="dot"></span>Encuentros cada 15 días</span><span class="chip"><span class="dot"></span>Materiales incluidos</span></div>
+    </div>
+
+    <div class="mockboard">
+      <div class="mini-card">
+        <p class="mini-kicker"><span>La entrega semanal</span><span class="mini-badge">Por mensaje</span></p>
+        
+        <div class="mini-row">
+          <span class="mini-row-label">El cuento</span>
+          <span class="mini-row-text">un relato completo para leer por tu cuenta</span>
+        </div>
+        
+        <div class="mini-row">
+          <span class="mini-row-label">El análisis</span>
+          <span class="mini-row-text">material para leerlo con contexto</span>
+        </div>
+        
+        <div class="mini-row">
+          <span class="mini-row-label">La infografía</span>
+          <span class="mini-row-text">lo esencial, de un vistazo</span>
+        </div>
+        
+      </div>
+
+      <div class="mini-card mini-card--offset">
+        <p class="mini-kicker"><span>El encuentro quincenal</span><span class="mini-badge">Por video</span></p>
+        
+        <div class="mini-row">
+          <span class="mini-row-label">Antes</span>
+          <span class="mini-row-text">se lee por cuenta propia, a tu ritmo</span>
+        </div>
+        
+        <div class="mini-row">
+          <span class="mini-row-label">Ahí</span>
+          <span class="mini-row-text">se comparte lo que comprendió cada uno</span>
+        </div>
+        
+        <p class="mini-note">Un cuento por semana, dos encuentros por mes, y una historia leída desde varias ventanas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LA SELECCIÓN ================= -->
+<section class="section section--paper" id="seleccion">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">La selección</p>
+        <h2>Cuentos que van a cruzarla.</h2>
+      </div>
+      <p class="section-aside">Clásicos primero, con lugar para el relato distendido: la proporción apunta a tres cuentos de profundidad por cada uno más ligero.</p>
+    </div>
+
+    <div class="books"><article class="book">
+        <p class="book-author">Chéjov</p>
+        <h3 class="book-title">La dama del perrito</h3>
+        <div class="book-foot"><span class="book-year">1899</span><span class="tone tone--profundo">Profundo</span></div>
+      </article><article class="book">
+        <p class="book-author">Quiroga</p>
+        <h3 class="book-title">El almohadón de plumas</h3>
+        <div class="book-foot"><span class="book-year">1916</span><span class="tone tone--profundo">Profundo</span></div>
+      </article><article class="book">
+        <p class="book-author">Mansfield</p>
+        <h3 class="book-title">La fiesta del jardín</h3>
+        <div class="book-foot"><span class="book-year">1922</span><span class="tone tone--distendido">Distendido</span></div>
+      </article><article class="book">
+        <p class="book-author">Kafka</p>
+        <h3 class="book-title">Ante la ley</h3>
+        <div class="book-foot"><span class="book-year">1919</span><span class="tone tone--profundo">Profundo</span></div>
+      </article><article class="book">
+        <p class="book-author">Borges</p>
+        <h3 class="book-title">El sur</h3>
+        <div class="book-foot"><span class="book-year">1953</span><span class="tone tone--profundo">Profundo</span></div>
+      </article><article class="book">
+        <p class="book-author">Rulfo</p>
+        <h3 class="book-title">No oyes ladrar los perros</h3>
+        <div class="book-foot"><span class="book-year">1951</span><span class="tone tone--profundo">Profundo</span></div>
+      </article><article class="book">
+        <p class="book-author">Cortázar</p>
+        <h3 class="book-title">La casa tomada</h3>
+        <div class="book-foot"><span class="book-year">1946</span><span class="tone tone--distendido">Distendido</span></div>
+      </article><article class="book">
+        <p class="book-author">García Márquez</p>
+        <h3 class="book-title">Un señor muy viejo con unas alas enormes</h3>
+        <div class="book-foot"><span class="book-year">1968</span><span class="tone tone--distendido">Distendido</span></div>
+      </article><a class="book book--cta" href="https://www.instagram.com/club.entre.tramas/" rel="noopener" target="_blank">
+        <p class="book-author">¿Tu cuento?</p>
+        <h3 class="book-title">El más querido de tu estantería.</h3>
+        <span class="book-cta-note">Sugerilo por Instagram</span>
+      </a>
+    </div>
+    <p class="muestra-fine" style="margin-top: 28px;">Las portadas son ilustrativas: la lista definitiva se comparte con las personas del club.</p>
+  </div>
+</section>
+
+<!-- ================= CÓMO FUNCIONA ================= -->
+<section class="section" id="como-funciona">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Cómo funciona</p>
+        <h2>Tres ritmos que se suman.</h2>
+      </div>
+      <p class="section-aside">El material se lee por cuenta propia y el encuentro es la única cita fija del calendario.</p>
+    </div>
+
+    <div class="features"><article class="feature">
+        <p class="feature-num">I.</p>
+        <p class="feature-meta">Cada semana</p>
+        <h3 class="feature-title">Llega un cuento nuevo.</h3>
+        <p class="feature-body">Por mensaje digital: el relato completo de un autor clásico o contemporáneo, con un material de análisis para leerlo con contexto y una infografía con lo esencial.</p>
+      </article><article class="feature">
+        <p class="feature-num">II.</p>
+        <p class="feature-meta">A tu ritmo</p>
+        <h3 class="feature-title">Se lee por cuenta propia.</h3>
+        <p class="feature-body">Un cuento breve y materiales de una sola lectura, cuando te encuentre bien. Sin necesidad de leer en voz alta ni de estudiar como en un curso: con las impresiones listas alcanza.</p>
+      </article><article class="feature">
+        <p class="feature-num">III.</p>
+        <p class="feature-meta">Cada 15 días</p>
+        <h3 class="feature-title">Luego, el encuentro.</h3>
+        <p class="feature-body">Por videollamada: cada participante comparte lo que comprendió. Las interpretaciones se cruzan, y del mismo cuento salen miradas distintas y alguna pregunta que va más allá de la página.</p>
+      </article></div>
+  </div>
+</section>
+
+<!-- ================= SOBRE MÍ ================= -->
+<section class="section section--paper" id="sobre-mi">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-mark" aria-hidden="true">
+        <svg width="60%" height="60%" viewBox="0 0 200 160" fill="none">
+          <path d="M10 40 C 60 15, 140 70, 190 30" stroke="#8a2a1f" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M10 80 C 70 120, 130 40, 190 80" stroke="#b8872a" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M10 120 C 60 95, 140 150, 190 105" stroke="#1a1814" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">Sobre mí</p>
+        <h2>Quién coordina el club.</h2><p style="margin-top:24px">Mi formación en psicología y mi manera de leer con lápiz en mano se cruzan en todas las partes del club: en la selección de los cuentos, en los materiales que apuntan a aportar contexto y en la coordinación de los encuentros.</p><p>Trabajo para que la conversación abra preguntas sin imponer conclusiones. La idea es que cada persona se lleve algo propio: una manera nueva de mirar una historia, o un pedazo de su vida a la luz de la lectura.</p><p class="about-sign">— Entre-Tramas, La Plata.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRINCIPIOS (oscuro) ================= -->
+<section class="section section--dark principles" id="principios">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Por diseño</p>
+        <h2>Pensado para leer más hondo.</h2>
+      </div>
+      <p class="section-aside">Cuatro decisiones que sostienen el modo en que el club se lee y se conversa.</p>
+    </div>
+
+    <div class="principles-grid"><div class="principle">
+        <h3>Sin cursada.</h3>
+        <p>Leés a tu ritmo y por cuenta propia: un cuento breve por semana es el único compromiso del calendario.</p>
+      </div><div class="principle">
+        <h3>Sin lectura correcta.</h3>
+        <p>Cada encuentro suma miradas al mismo cuento y la conversación queda abierta: nadie la cierra con la respuesta final.</p>
+      </div><div class="principle">
+        <h3>Sin terapia.</h3>
+        <p>La coordinación combina literatura y psicología para abrir preguntas. No promete resultados terapéuticos ni exige que nadie comparta lo personal.</p>
+      </div><div class="principle">
+        <h3>Con identidad propia.</h3>
+        <p>La selección busca profundidad sin perder el disfrute: clásicos que dejan pensando y relatos distendidos para tomar con un mate.</p>
+      </div></div>
+  </div>
+</section>
+
+<!-- ================= MODALIDADES (tabs con HTMX) ================= -->
+<section class="section" id="modalidades">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Modalidades</p>
+        <h2>La misma lectura, dos escenarios.</h2>
+      </div>
+      <p class="section-aside">La modalidad virtual es la principal: los materiales viajan digital y los encuentros reúnen a lectores de cualquier provincia.</p>
+    </div>
+
+    <div class="mod-grid">
+      <div class="mod-copy">
+        <p>El club arranca en formato virtual y abierto: cualquier parte del país, materiales digitales, encuentros por videollamada.</p>
+        <p>A la vez, se explora un grupo presencial reducido en La Plata, pensado para personas conocidas o recomendadas, con té y algo rico en la mesa. El formato, la frecuencia y el precio están todavía en definición.</p>
+        <p class="section-aside">Si la presencial te tienta, dejá tu nombre por Instagram y avisamos cuando el grupo quede armado.</p>
+      </div>
+
+      <!-- Sin JavaScript: el enlace lleva a presencial.html (página completa).
+           Con HTMX: se intercambia por el fragmento parcial de esta misma carpeta. -->
+      <div id="modalidad-card">
+        <!-- El contenido del panel se edita en _data/landing.yml → modalidades. -->
+        <div class="tabs-card">
+          <div class="tabbar">
+            <a class="tab" href="#modalidades" aria-current="true"
+               hx-get="partials/modalidad-virtual.html" hx-target="#modalidad-card" hx-swap="innerHTML">Virtual</a>
+            <a class="tab" href="presencial.html"
+               hx-get="partials/modalidad-presencial.html" hx-target="#modalidad-card" hx-swap="innerHTML">Presencial</a>
+          </div>
+
+          <div class="panel">
+            <h3>El club virtual</h3>
+            <p class="panel-sub">La modalidad principal</p>
+            <ul class="panel-list"><li><span class="tick">✓</span>Los cuatro cuentos del mes llegan por digital, con sus materiales.</li><li><span class="tick">✓</span>Los encuentros quincenales se hacen por videollamada.</li><li><span class="tick">✓</span>Se participa desde cualquier provincia.</li></ul>
+            <p class="panel-note">La conversación es en vivo y en grupo; el resto del mes, cada uno lee por su cuenta.</p>
+            <a class="btn btn--ghost btn--sm" href="https://www.instagram.com/club.entre.tramas/" rel="noopener" target="_blank">Consultá por Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUÉ INCLUYE + PRECIO ================= -->
+<section class="section section--paper" id="incluye">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Qué incluye y cuánto cuesta</p>
+        <h2>Lo que llega cada mes.</h2>
+      </div>
+      <p class="section-aside">Todo viaja digital: los encuentros se hacen por videollamada y la inscripción se coordina por Instagram.</p>
+    </div>
+
+    <div class="incl-grid">
+      <div class="inc-rows"><div class="inc-row">
+          <span class="inc-num">4</span>
+          <div>
+            <h3>Cuentos por mes</h3>
+            <p>Uno por cada semana: relatos de ficción de distintas épocas y autores, siempre en formato breve.</p>
+          </div>
+        </div><div class="inc-row">
+          <span class="inc-num">4</span>
+          <div>
+            <h3>Materiales de análisis</h3>
+            <p>Cada cuento llega acompañado de un texto que aporta contexto, abre perspectivas y deja una o dos preguntas pendientes.</p>
+          </div>
+        </div><div class="inc-row">
+          <span class="inc-num">4</span>
+          <div>
+            <h3>Infografías</h3>
+            <p>Lo esencial de cada lectura condensado en una imagen, para revisar rápido antes de cada encuentro.</p>
+          </div>
+        </div><div class="inc-row">
+          <span class="inc-num">2</span>
+          <div>
+            <h3>Encuentros quincenales</h3>
+            <p>Por videollamada: se comparte lo que cada uno comprendió y se profundiza en la lectura con las miradas del grupo.</p>
+          </div>
+        </div></div>
+
+      <aside class="price-card" id="precio">
+        <p class="eyebrow">Precio</p>
+        <p class="price-value">
+          <span class="price-amount"><span class="cur">$</span>20.000</span>
+          <span class="price-unit">/ mes</span>
+        </p>
+        <p class="price-body">La cuota cubre los cuatro cuentos del mes, sus materiales complementarios y los encuentros quincenales. La inscripción y el pago se coordinan a mano, por Instagram.</p>
+        <p class="price-note">Las condiciones de participación se confirman al coordinar la inscripción, de manera clara y por adelantado.</p>
+        <a class="btn btn--ink" href="https://www.instagram.com/club.entre.tramas/" rel="noopener" target="_blank">Hacé tu consulta</a>
+        <p class="muestra-fine" style="margin-top:14px">Valores en pesos argentinos</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MUESTRA GRATUITA ================= -->
+<section class="section section--cream2" id="muestra">
+  <div class="wrap">
+    <div class="muestra-grid">
+      <div>
+        <p class="eyebrow">Muestra gratuita</p>
+        <h2>Probá el club antes de decidir.</h2>
+        <p class="lede">Es la experiencia del club en miniatura: un cuento, su material de análisis, una infografía y un video breve de presentación. Lo pedís por Instagram, lo leés con calma y después decidís.</p>
+        <div class="muestra-ctas">
+          <a class="btn btn--ink" href="https://www.instagram.com/club.entre.tramas/" rel="noopener" target="_blank">Pedí la muestra</a>
+          <span class="muestra-fine">Sin costo · sin registro en esta página</span>
+        </div>
+      </div>
+
+      <div class="sample-card">
+        <p class="mini-kicker"><span>La muestra contiene</span><span class="mini-badge">Gratis</span></p>
+        <div class="sample-rows"><div class="sample-row">
+            <span class="sample-row-label"><span class="num">1.</span>El cuento</span>
+            <span class="sample-row-desc">Completo</span>
+          </div><div class="sample-row">
+            <span class="sample-row-label"><span class="num">2.</span>El análisis</span>
+            <span class="sample-row-desc">Para leerlo con contexto</span>
+          </div><div class="sample-row">
+            <span class="sample-row-label"><span class="num">3.</span>La infografía</span>
+            <span class="sample-row-desc">De un vistazo</span>
+          </div><div class="sample-row">
+            <span class="sample-row-label"><span class="num">4.</span>El video</span>
+            <span class="sample-row-desc">Cómo funciona el club</span>
+          </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CIFRAS ================= -->
+<section class="stats">
+  <div class="wrap stats-grid"><div class="stat">
+      <p class="stat-value">4</p>
+      <p class="stat-label">Cuentos por mes</p>
+    </div><div class="stat">
+      <p class="stat-value">2</p>
+      <p class="stat-label">Encuentros por mes</p>
+    </div><div class="stat">
+      <p class="stat-value">1</p>
+      <p class="stat-label">Muestra gratuita</p>
+    </div><div class="stat">
+      <p class="stat-value">3<span class="stat-unit">:</span>1</p>
+      <p class="stat-label">Profundo por cada distendido</p>
+    </div></div>
+</section>
+
+<!-- ================= PREGUNTAS ================= -->
+<section class="section" id="preguntas">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Preguntas</p>
+        <h2>Antes de sumarte.</h2>
+      </div>
+      <p class="section-aside">La que falte, se responde por Instagram; por ahí llega también la muestra gratuita.</p>
+    </div><div class="faq-grid">
+      <div><details class="faq-item">
+          <summary>¿El club es para quien ya lee o para empezar?</summary>
+          <p class="faq-a">Para quien ya lee y quiere profundizar: no está pensado como iniciación a la lectura. Con leer el cuento de la semana y llevar las impresiones al encuentro alcanza.</p>
+        </details><details class="faq-item">
+          <summary>¿Qué hay que hacer antes de cada encuentro?</summary>
+          <p class="faq-a">Leer el cuento y los materiales por cuenta propia. En el encuentro, cada uno comparte lo que comprendió; no se lee en voz alta ni hay entregas.</p>
+        </details><details class="faq-item">
+          <summary>¿Qué incluye la muestra gratuita?</summary>
+          <p class="faq-a">Un cuento completo con su material de análisis y su infografía, más un video breve de presentación del club. Todo sin costo, sin otro paso que un mensaje directo.</p>
+        </details></div>
+      <div><details class="faq-item">
+          <summary>¿Cómo se paga el club?</summary>
+          <p class="faq-a">A mano: se consulta por Instagram, se confirman las condiciones y se coordina la cuota. No hay pasarela de pago en esta página.</p>
+        </details><details class="faq-item">
+          <summary>¿Y la modalidad presencial en La Plata?</summary>
+          <p class="faq-a">Se está armando un grupo reducido con personas conocidas o recomendadas, con té y algo rico. Formato, frecuencia y precio siguen en definición: quien le interese puede dejar su nombre por Instagram.</p>
+        </details><details class="faq-item">
+          <summary>¿Cuándo arranca?</summary>
+          <p class="faq-a">La fecha todavía no está cerrada. La manera más simple de enterarse primero es seguir el club en Instagram: la muestra gratuita llega antes que el primer mes.</p>
+        </details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CIERRE / CONTACTO ================= -->
+<section class="closing" id="contacto">
+  <div class="wrap">
+    <p class="eyebrow">Contacto</p>
+    <h2 class="h2">El próximo cuento se lee mejor <em>entre todos</em>.</h2>
+    <p class="lede">Escribí por Instagram para pedir la muestra gratuita, hacé una pregunta o reservá tu lugar: la inscripción se coordina a mano, con tiempo y calma.</p>
+    <div class="closing-ctas">
+      <a class="btn btn--ink" href="https://www.instagram.com/club.entre.tramas/" rel="noopener" target="_blank">Escribinos por Instagram</a>
+      <span class="closing-fine">@club.entre.tramas</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-col">
+      <p class="footer-brand">Entre-Tramas.</p>
+      <p class="footer-sub">Club de lectura de cuentos · La Plata · Virtual</p>
+    </div>
+    <div class="footer-col">
+      <nav class="footer-links" aria-label="Secciones del pie"><a href="#seleccion">La selección</a><a href="#como-funciona">Cómo funciona</a><a href="#sobre-mi">Sobre mí</a><a href="#incluye">Qué incluye</a><a href="#precio">Precio</a><a href="#modalidades">Modalidades</a><a href="#muestra">Muestra gratuita</a><a href="#preguntas">Preguntas</a><a href="https://www.instagram.com/club.entre.tramas/" rel="noopener" target="_blank">Instagram ↗</a>
+      </nav>
+      <p class="footer-fine">© 2026 Entre-Tramas · Sitio informativo: sin pagos ni inscripciones automáticas · Hecho para leer despacio</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

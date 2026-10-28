@@ -1,0 +1,326 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+# El repo es la fuente de verdad: los cambios del CMS se guardan como commits en GitHub.
+backend:
+  name: github
+  repo: entre-tramas/entre-tramas.github.io
+
+# No hay carpeta privada "uploads": las imágenes nuevas van a assets/media
+media_folder: assets/media
+public_folder: /assets/media
+
+collections:
+  - name: landing
+    label: Página de inicio
+    files:
+      - name: landing
+        label: Landing (inicio)
+        file: _data/landing.yml
+        fields:
+          - { label: "URL de Instagram", name: instagram_url, widget: string, required: false }
+          - { label: "Usuario de Instagram", name: instagram_handle, widget: string, required: false }
+          - label: Meta (SEO)
+            name: meta
+            widget: object
+            fields:
+              - { label: "Título (pestaña)", name: title, widget: string }
+              - { label: "Descripción (SEO)", name: description, widget: text }
+              - { label: "Título para redes / Twitter", name: og_title, widget: string }
+              - { label: "Descripción para redes", name: og_description, widget: text }
+              - { label: "Descripción para Twitter", name: twitter_description, widget: string, required: false }
+          - label: Navegación
+            name: nav
+            widget: object
+            fields:
+              - { label: "Botón del menú", name: cta_label, widget: string }
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - { label: "Texto", name: label, widget: string }
+                  - { label: "Destino (#ancla o ruta)", name: href, widget: string }
+          - label: Portada (hero)
+            name: hero
+            widget: object
+            fields:
+              - { label: "Sobre el título (kicker)", name: eyebrow, widget: string }
+              - { label: "Título — primera parte", name: h1_pre, widget: string }
+              - { label: "Título — palabra destacada (cursiva)", name: h1_em, widget: string }
+              - { label: "Título — final", name: h1_post, widget: string }
+              - { label: "Introducción", name: lede, widget: text }
+              - label: Botones
+                name: ctas
+                widget: list
+                fields:
+                  - { label: "Texto", name: label, widget: string }
+                  - { label: "Destino", name: href, widget: string }
+              - label: Sellos (chips)
+                name: chips
+                widget: list
+                fields:
+                  - { label: "Texto", name: label, widget: string }
+          - label: Tablero (mini tarjetas)
+            name: mockboard
+            widget: object
+            fields:
+              - label: Tarjetas
+                name: cards
+                widget: list
+                fields:
+                  - { label: "Encabezado", name: kicker, widget: string }
+                  - { label: "Etiqueta (badge)", name: badge, widget: string }
+                  - label: Filas
+                    name: rows
+                    widget: list
+                    fields:
+                      - { label: "Etiqueta", name: label, widget: string }
+                      - { label: "Descripción", name: text, widget: string }
+                  - { label: "Nota al pie (opcional)", name: note, widget: string, required: false }
+          - label: La selección
+            name: seleccion
+            widget: object
+            fields:
+              - { label: "Kicker", name: eyebrow, widget: string }
+              - { label: "Título", name: h2, widget: string }
+              - { label: "Nota al margen", name: aside, widget: text }
+              - label: Cuentos sugeridos
+                name: books
+                widget: list
+                fields:
+                  - { label: "Autor", name: author, widget: string }
+                  - { label: "Título", name: title, widget: string }
+                  - { label: "Año", name: year, widget: string }
+                  - { label: "Tono", name: tone, widget: select, options: [profundo, distendido] }
+              - label: Tarjeta final (pedí tu cuento)
+                name: cta_card
+                widget: object
+                fields:
+                  - { label: "Autor", name: author, widget: string }
+                  - { label: "Título", name: title, widget: string }
+                  - { label: "Nota", name: note, widget: string }
+              - { label: "Nota al pie", name: note, widget: text }
+          - label: Cómo funciona
+            name: como_funciona
+            widget: object
+            fields:
+              - { label: "Kicker", name: eyebrow, widget: string }
+              - { label: "Título", name: h2, widget: string }
+              - { label: "Nota al margen", name: aside, widget: text }
+              - label: Pasos
+                name: features
+                widget: list
+                fields:
+                  - { label: "Numeral", name: num, widget: string }
+                  - { label: "Etiqueta", name: meta, widget: string }
+                  - { label: "Título", name: title, widget: string }
+                  - { label: "Texto", name: body, widget: text }
+          - label: Sobre mí
+            name: sobre_mi
+            widget: object
+            fields:
+              - { label: "Kicker", name: eyebrow, widget: string }
+              - { label: "Título", name: h2, widget: string }
+              - label: Párrafos
+                name: paragraphs
+                widget: list
+                field: { label: "Párrafo", name: paragraph, widget: text }
+              - { label: "Firma", name: sign, widget: string }
+          - label: Principios
+            name: principios
+            widget: object
+            fields:
+              - { label: "Kicker", name: eyebrow, widget: string }
+              - { label: "Título", name: h2, widget: string }
+              - { label: "Nota al margen", name: aside, widget: text }
+              - label: Principios
+                name: principles
+                widget: list
+                fields:
+                  - { label: "Título", name: title, widget: string }
+                  - { label: "Texto", name: body, widget: text }
+          - label: Modalidades
+            name: modalidades
+            widget: object
+            fields:
+              - { label: "Kicker", name: eyebrow, widget: string }
+              - { label: "Título", name: h2, widget: string }
+              - { label: "Nota al margen", name: aside, widget: text }
+              - label: Texto lateral
+                name: copy
+                widget: list
+                field: { label: "Párrafo", name: paragraph, widget: text }
+              - { label: "Nota al final del texto", name: aside2, widget: text }
+              - label: Tarjeta Virtual
+                name: virtual
+                widget: object
+                fields:
+                  - { label: "Título", name: title, widget: string }
+                  - { label: "Subtítulo", name: sub, widget: string }
+                  - label: Ítems
+                    name: items
+                    widget: list
+                    field: { label: "Ítem", name: item, widget: string }
+                  - { label: "Nota", name: note, widget: text }
+              - label: Tarjeta Presencial
+                name: presencial
+                widget: object
+                fields:
+                  - { label: "Título", name: title, widget: string }
+                  - { label: "Subtítulo", name: sub, widget: string }
+                  - label: Ítems
+                    name: items
+                    widget: list
+                    field: { label: "Ítem", name: item, widget: string }
+                  - { label: "Nota", name: note, widget: text }
+              - { label: "Botón de consulta", name: panel_cta, widget: string }
+          - label: Qué incluye
+            name: incluye
+            widget: object
+            fields:
+              - { label: "Kicker", name: eyebrow, widget: string }
+              - { label: "Título", name: h2, widget: string }
+              - { label: "Nota al margen", name: aside, widget: text }
+              - label: Filas
+                name: rows
+                widget: list
+                fields:
+                  - { label: "Número", name: num, widget: string }
+                  - { label: "Título", name: title, widget: string }
+                  - { label: "Texto", name: body, widget: text }
+          - label: Precio
+            name: precio
+            widget: object
+            fields:
+              - { label: "Kicker", name: eyebrow, widget: string }
+              - { label: "Moneda", name: cur, widget: string }
+              - { label: "Importe", name: amount, widget: string }
+              - { label: "Unidad", name: unit, widget: string }
+              - { label: "Texto", name: body, widget: text }
+              - { label: "Nota", name: note, widget: text }
+              - { label: "Botón", name: cta_label, widget: string }
+              - { label: "Nota al pie", name: fine, widget: string }
+          - label: Muestra gratuita
+            name: muestra
+            widget: object
+            fields:
+              - { label: "Kicker", name: eyebrow, widget: string }
+              - { label: "Título", name: h2, widget: string }
+              - { label: "Introducción", name: lede, widget: text }
+              - { label: "Botón", name: cta_label, widget: string }
+              - { label: "Nota junto al botón", name: fine, widget: string }
+              - { label: "Encabezado de la tarjeta", name: card_kicker, widget: string }
+              - { label: "Badge de la tarjeta", name: card_badge, widget: string }
+              - label: Filas de la tarjeta
+                name: rows
+                widget: list
+                fields:
+                  - { label: "Contenido", name: label, widget: string }
+                  - { label: "Detalle", name: desc, widget: string }
+          - label: Cifras
+            name: stats
+            widget: list
+            fields:
+              - { label: "Valor", name: value, widget: string }
+              - { label: "Separador (opcional)", name: unit, widget: string, required: false }
+              - { label: "Valor después del separador (opcional)", name: value_after, widget: string, required: false }
+              - { label: "Etiqueta", name: label, widget: string }
+          - label: Preguntas frecuentes
+            name: faq
+            widget: object
+            fields:
+              - { label: "Kicker", name: eyebrow, widget: string }
+              - { label: "Título", name: h2, widget: string }
+              - { label: "Nota al margen", name: aside, widget: text }
+              - label: Preguntas
+                name: items
+                widget: list
+                fields:
+                  - { label: "Pregunta", name: q, widget: string }
+                  - { label: "Respuesta", name: a, widget: text }
+          - label: Cierre (contacto)
+            name: cierre
+            widget: object
+            fields:
+              - { label: "Kicker", name: eyebrow, widget: string }
+              - { label: "Título — primera parte", name: h2_pre, widget: string }
+              - { label: "Título — palabra destacada", name: h2_em, widget: string }
+              - { label: "Título — final", name: h2_post, widget: string }
+              - { label: "Texto", name: lede, widget: text }
+              - { label: "Botón", name: cta_label, widget: string }
+          - label: Pie de la página
+            name: footer
+            widget: object
+            fields:
+              - { label: "Marca", name: brand, widget: string }
+              - { label: "Subtítulo", name: sub, widget: string }
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - { label: "Texto", name: label, widget: string }
+                  - { label: "Destino", name: href, widget: string }
+              - { label: "Link de Instagram", name: instagram_label, widget: string }
+              - { label: "Nota legal", name: fine, widget: string }
+
+  - name: presencial
+    label: Página presencial
+    files:
+      - name: presencial
+        label: Presencial (página)
+        file: _data/presencial.yml
+        fields:
+          - { label: "URL de Instagram", name: instagram_url, widget: string, required: false }
+          - { label: "Usuario de Instagram", name: instagram_handle, widget: string, required: false }
+          - label: Meta (SEO)
+            name: meta
+            widget: object
+            fields:
+              - { label: "Título (pestaña)", name: title, widget: string }
+              - { label: "Descripción (SEO)", name: description, widget: text }
+              - { label: "Título para redes", name: og_title, widget: string }
+              - { label: "Descripción para redes", name: og_description, widget: text }
+          - label: Navegación
+            name: nav
+            widget: object
+            fields:
+              - { label: "Botón del menú", name: cta_label, widget: string }
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - { label: "Texto", name: label, widget: string }
+                  - { label: "Destino (#ancla o ruta)", name: href, widget: string }
+          - label: Encabezado de la página
+            name: encabezado
+            widget: object
+            fields:
+              - { label: "Texto del volver", name: backlink_label, widget: string }
+              - { label: "Kicker", name: eyebrow, widget: string }
+              - { label: "Título", name: h1, widget: string }
+              - label: Párrafos
+                name: copy
+                widget: list
+                field: { label: "Párrafo", name: paragraph, widget: text }
+              - { label: "Nota al margen", name: aside, widget: text }
+          - label: Cierre (contacto)
+            name: cierre
+            widget: object
+            fields:
+              - { label: "Kicker", name: eyebrow, widget: string }
+              - { label: "Título", name: h2, widget: string }
+              - { label: "Texto", name: lede, widget: text }
+              - { label: "Botón", name: cta_label, widget: string }
+          - label: Pie de la página
+            name: footer
+            widget: object
+            fields:
+              - { label: "Marca", name: brand, widget: string }
+              - { label: "Subtítulo", name: sub, widget: string }
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - { label: "Texto", name: label, widget: string }
+                  - { label: "Destino", name: href, widget: string }
+              - { label: "Link de Instagram", name: instagram_label, widget: string }
+              - { label: "Nota legal", name: fine, widget: string }

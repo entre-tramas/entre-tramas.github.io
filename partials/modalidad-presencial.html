@@ -1,5 +1,7 @@
-<!-- Fragmento HTMX: se intercambia dentro de #modalidad-card en index.html.
-     También se usa (a pantalla completa) en presencial.html como fallback sin JavaScript. -->
+---
+---
+{# Fragmento HTMX para la pestaña Presencial — mismo contenido que el panel de presencial.html.
+   Liquid: Jekyll lo procesa al compilar; HTMX intercambia el HTML resultante. #}
 <div class="tabs-card">
   <div class="tabbar">
     <a class="tab" href="index.html#modalidades"
@@ -9,14 +11,14 @@
   </div>
 
   <div class="panel">
-    <h3>El club presencial</h3>
-    <p class="panel-sub">La Plata · En definición</p>
+    <h3>{{ site.data.landing.modalidades.presencial.title }}</h3>
+    <p class="panel-sub">{{ site.data.landing.modalidades.presencial.sub }}</p>
     <ul class="panel-list">
-      <li><span class="tick">✓</span>Grupo reducido, con personas conocidas o recomendadas.</li>
-      <li><span class="tick">✓</span>Encuentros frente a frente, con té y algo rico.</li>
-      <li><span class="tick">✓</span>Formato, frecuencia y precio: se confirman de a poco.</li>
+      {%- for item in site.data.landing.modalidades.presencial.items -%}
+      <li><span class="tick">✓</span>{{ item }}</li>
+      {%- endfor -%}
     </ul>
-    <p class="panel-note">Si te interesa, dejá tu nombre por Instagram y avisamos cuando el grupo quede armado.</p>
-    <a class="btn btn--ghost btn--sm" href="https://www.instagram.com/club.entre.tramas/" rel="noopener" target="_blank">Consultá por Instagram</a>
+    <p class="panel-note">{{ site.data.landing.modalidades.presencial.note }}</p>
+    <a class="btn btn--ghost btn--sm" href="{{ site.data.landing.instagram_url }}" rel="noopener" target="_blank">{{ site.data.landing.modalidades.panel_cta }}</a>
   </div>
 </div>

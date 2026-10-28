@@ -1,0 +1,16 @@
+title: "Entre-Tramas"
+description: "Club de lectura de cuentos de ficción: un cuento cada semana con material de análisis e infografía, y encuentros quincenales. Probá gratis la muestra y sumate por Instagram."
+url: "https://entre-tramas.github.io"
+lang: "es-AR"
+
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - serve.sh
+  - .gitignore
+  - .agents
+  - .claude
+  - skills-lock.json

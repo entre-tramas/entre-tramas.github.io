@@ -1,0 +1,46 @@
+# Contenido de la página de la modalidad presencial — editado por Sveltia CMS.
+# La tarjeta del panel se comparte con las modalidades del landing:
+# está en _data/landing.yml → modalidades.presencial.
+
+instagram_url: "https://www.instagram.com/club.entre.tramas/"
+instagram_handle: "@club.entre.tramas"
+
+meta:
+  title: "Modalidad presencial en La Plata · Entre-Tramas"
+  description: "Grupo presencial reducido del club de lectura Entre-Tramas en La Plata: encuentros frente a frente con té y algo rico. Formato, frecuencia y precio en definición."
+  og_title: "Modalidad presencial en La Plata · Entre-Tramas"
+  og_description: "Grupo presencial reducido del club de lectura: encuentros frente a frente, con té y algo rico."
+
+nav:
+  links:
+    - { label: "La selección", href: "index.html#seleccion" }
+    - { label: "Cómo funciona", href: "index.html#como-funciona" }
+    - { label: "Contacto", href: "#contacto" }
+  cta_label: "Instagram ↗"
+
+encabezado:
+  backlink_label: "Volver a modalidades"
+  eyebrow: "Modalidades"
+  h1: "El club, frente a frente."
+  copy:
+    - "El club principal funciona en formato virtual y abierto. A la vez, se explora un grupo presencial reducido en La Plata, pensado para personas conocidas o recomendadas."
+    - "La idea: la misma selección de cuentos y la misma conversación, compartiendo una mesa con té y algo rico."
+  aside: "Formato, frecuencia y precio siguen en definición: se informan acá ni bien queden armados."
+
+cierre:
+  eyebrow: "Contacto"
+  h2: "¿Te interesa el grupo presencial?"
+  lede: "Escribí por Instagram y dejá tu nombre: avisamos en cuanto el grupo quede armado y haya fecha."
+  cta_label: "Escribinos por Instagram"
+
+footer:
+  brand: "Entre-Tramas."
+  sub: "Club de lectura de cuentos · La Plata · Virtual"
+  links:
+    - { label: "La selección", href: "index.html#seleccion" }
+    - { label: "Cómo funciona", href: "index.html#como-funciona" }
+    - { label: "Qué incluye", href: "index.html#incluye" }
+    - { label: "Muestra gratuita", href: "index.html#muestra" }
+    - { label: "Preguntas", href: "index.html#preguntas" }
+  instagram_label: "Instagram ↗"
+  fine: "© 2026 Entre-Tramas · Sitio informativo: sin pagos ni inscripciones automáticas · Hecho para leer despacio"

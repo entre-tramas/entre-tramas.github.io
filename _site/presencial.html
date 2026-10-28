@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modalidad presencial en La Plata · Entre-Tramas</title>
+
+  <meta name="description" content="Grupo presencial reducido del club de lectura Entre-Tramas en La Plata: encuentros frente a frente con té y algo rico. Formato, frecuencia y precio en definición.">
+  <link rel="canonical" href="https://entre-tramas.github.io/presencial.html">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f4ede0">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Entre-Tramas">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:url" content="https://entre-tramas.github.io/presencial.html">
+  <meta property="og:title" content="Modalidad presencial en La Plata · Entre-Tramas">
+  <meta property="og:description" content="Grupo presencial reducido del club de lectura: encuentros frente a frente, con té y algo rico.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/site.css">
+
+  <meta name="htmx-config" content='{"selfRequestsOnly":true}'>
+  <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.4/dist/htmx.min.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="nav-brand" href="index.html">Entre<span class="nav-brand-word">-Tramas</span>.</a>
+    <nav class="nav-links" aria-label="Secciones"><a class="nav-link" href="index.html#seleccion">La selección</a><a class="nav-link" href="index.html#como-funciona">Cómo funciona</a><a class="nav-link" href="#contacto">Contacto</a></nav>
+    <a class="btn btn--ink btn--sm nav-cta" href="https://www.instagram.com/club.entre.tramas/" rel="noopener" target="_blank">Instagram ↗</a>
+  </div>
+</header>
+
+<main>
+  <section class="standalone">
+    <div class="wrap">
+      <a class="backlink" href="index.html#modalidades">← Volver a modalidades</a>
+
+      <p class="eyebrow">Modalidades</p>
+      <h1 class="h1" style="font-size: clamp(36px, 5vw, 60px);">El club, frente a frente.</h1>
+
+      <div class="mod-grid" style="gap: 40px; align-items: start;">
+        <div class="mod-copy"><p>El club principal funciona en formato virtual y abierto. A la vez, se explora un grupo presencial reducido en La Plata, pensado para personas conocidas o recomendadas.</p><p>La idea: la misma selección de cuentos y la misma conversación, compartiendo una mesa con té y algo rico.</p><p class="section-aside">Formato, frecuencia y precio siguen en definición: se informan acá ni bien queden armados.</p>
+        </div>
+
+        <div id="modalidad-card">
+          <div class="tabs-card">
+            <div class="tabbar">
+              <a class="tab" href="index.html#modalidades"
+                 hx-get="partials/modalidad-virtual.html" hx-target="#modalidad-card" hx-swap="innerHTML">Virtual</a>
+              <a class="tab" href="presencial.html" aria-current="true"
+                 hx-get="partials/modalidad-presencial.html" hx-target="#modalidad-card" hx-swap="innerHTML">Presencial</a>
+            </div>
+
+            <div class="panel">
+              <h3>El club presencial</h3>
+              <p class="panel-sub">La Plata · En definición</p>
+              <ul class="panel-list"><li><span class="tick">✓</span>Grupo reducido, con personas conocidas o recomendadas.</li><li><span class="tick">✓</span>Encuentros frente a frente, con té y algo rico.</li><li><span class="tick">✓</span>Formato, frecuencia y precio: se confirman de a poco.</li></ul>
+              <p class="panel-note">Si te interesa, dejá tu nombre por Instagram y avisamos cuando el grupo quede armado.</p>
+              <a class="btn btn--ghost btn--sm" href="https://www.instagram.com/club.entre.tramas/" rel="noopener" target="_blank">Consultá por Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing" id="contacto">
+    <div class="wrap">
+      <p class="eyebrow">Contacto</p>
+      <h2 class="h2">¿Te interesa el grupo presencial?</h2>
+      <p class="lede">Escribí por Instagram y dejá tu nombre: avisamos en cuanto el grupo quede armado y haya fecha.</p>
+      <div class="closing-ctas">
+        <a class="btn btn--ink" href="https://www.instagram.com/club.entre.tramas/" rel="noopener" target="_blank">Escribinos por Instagram</a>
+        <span class="closing-fine">@club.entre.tramas</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-col">
+      <p class="footer-brand">Entre-Tramas.</p>
+      <p class="footer-sub">Club de lectura de cuentos · La Plata · Virtual</p>
+    </div>
+    <div class="footer-col">
+      <nav class="footer-links" aria-label="Secciones del pie"><a href="index.html#seleccion">La selección</a><a href="index.html#como-funciona">Cómo funciona</a><a href="index.html#incluye">Qué incluye</a><a href="index.html#muestra">Muestra gratuita</a><a href="index.html#preguntas">Preguntas</a><a href="https://www.instagram.com/club.entre.tramas/" rel="noopener" target="_blank">Instagram ↗</a>
+      </nav>
+      <p class="footer-fine">© 2026 Entre-Tramas · Sitio informativo: sin pagos ni inscripciones automáticas · Hecho para leer despacio</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+# Contenido de la página de inicio — editado por Sveltia CMS (admin/#/collections/landing)
+# La plantilla index.html pinta todo desde este archivo.
+
+instagram_url: "https://www.instagram.com/club.entre.tramas/"
+instagram_handle: "@club.entre.tramas"
+
+meta:
+  title: "Entre-Tramas · Club de lectura de cuentos (virtual y en La Plata)"
+  description: "Club de lectura de cuentos de ficción: un cuento cada semana con material de análisis e infografía, y encuentros quincenales por videollamada. Probá gratis la muestra y sumate por Instagram."
+  og_title: "Entre-Tramas · Club de lectura de cuentos"
+  og_description: "Un cuento cada semana con material de análisis e infografía, y encuentros quincenales para compartir lo que cada uno comprendió."
+  twitter_description: "Un cuento cada semana, materiales de análisis y encuentros quincenales. Leé en compañía."
+
+nav:
+  links:
+    - { label: "La selección", href: "#seleccion" }
+    - { label: "Cómo funciona", href: "#como-funciona" }
+    - { label: "Modalidades", href: "#modalidades" }
+    - { label: "Preguntas", href: "#preguntas" }
+  cta_label: "Instagram ↗"
+
+hero:
+  eyebrow: "Un club de lectura virtual · Cuentos de ficción"
+  h1_pre: "Un club para leer cuentos"
+  h1_em: "entre todos"
+  h1_post: "."
+  lede: "Cada semana llega un cuento nuevo, acompañado de un material de análisis y una infografía. Cada quince días, un encuentro para compartir lo que cada uno comprendió: la misma historia, leída por varios, se entiende más hondo."
+  ctas:
+    - { label: "Pedí la muestra gratuita", href: "#muestra" }
+    - { label: "Ver cómo funciona", href: "#como-funciona" }
+  chips:
+    - { label: "4 cuentos por mes" }
+    - { label: "Encuentros cada 15 días" }
+    - { label: "Materiales incluidos" }
+
+mockboard:
+  cards:
+    - kicker: "La entrega semanal"
+      badge: "Por mensaje"
+      rows:
+        - { label: "El cuento", text: "un relato completo para leer por tu cuenta" }
+        - { label: "El análisis", text: "material para leerlo con contexto" }
+        - { label: "La infografía", text: "lo esencial, de un vistazo" }
+    - kicker: "El encuentro quincenal"
+      badge: "Por video"
+      rows:
+        - { label: "Antes", text: "se lee por cuenta propia, a tu ritmo" }
+        - { label: "Ahí", text: "se comparte lo que comprendió cada uno" }
+      note: "Un cuento por semana, dos encuentros por mes, y una historia leída desde varias ventanas."
+
+seleccion:
+  eyebrow: "La selección"
+  h2: "Cuentos que van a cruzarla."
+  aside: "Clásicos primero, con lugar para el relato distendido: la proporción apunta a tres cuentos de profundidad por cada uno más ligero."
+  books:
+    - { author: "Chéjov", title: "La dama del perrito", year: "1899", tone: "profundo" }
+    - { author: "Quiroga", title: "El almohadón de plumas", year: "1916", tone: "profundo" }
+    - { author: "Mansfield", title: "La fiesta del jardín", year: "1922", tone: "distendido" }
+    - { author: "Kafka", title: "Ante la ley", year: "1919", tone: "profundo" }
+    - { author: "Borges", title: "El sur", year: "1953", tone: "profundo" }
+    - { author: "Rulfo", title: "No oyes ladrar los perros", year: "1951", tone: "profundo" }
+    - { author: "Cortázar", title: "La casa tomada", year: "1946", tone: "distendido" }
+    - { author: "García Márquez", title: "Un señor muy viejo con unas alas enormes", year: "1968", tone: "distendido" }
+  cta_card:
+    author: "¿Tu cuento?"
+    title: "El más querido de tu estantería."
+    note: "Sugerilo por Instagram"
+  note: "Las portadas son ilustrativas: la lista definitiva se comparte con las personas del club."
+
+como_funciona:
+  eyebrow: "Cómo funciona"
+  h2: "Tres ritmos que se suman."
+  aside: "El material se lee por cuenta propia y el encuentro es la única cita fija del calendario."
+  features:
+    - num: "I."
+      meta: "Cada semana"
+      title: "Llega un cuento nuevo."
+      body: "Por mensaje digital: el relato completo de un autor clásico o contemporáneo, con un material de análisis para leerlo con contexto y una infografía con lo esencial."
+    - num: "II."
+      meta: "A tu ritmo"
+      title: "Se lee por cuenta propia."
+      body: "Un cuento breve y materiales de una sola lectura, cuando te encuentre bien. Sin necesidad de leer en voz alta ni de estudiar como en un curso: con las impresiones listas alcanza."
+    - num: "III."
+      meta: "Cada 15 días"
+      title: "Luego, el encuentro."
+      body: "Por videollamada: cada participante comparte lo que comprendió. Las interpretaciones se cruzan, y del mismo cuento salen miradas distintas y alguna pregunta que va más allá de la página."
+
+sobre_mi:
+  eyebrow: "Sobre mí"
+  h2: "Quién coordina el club."
+  paragraphs:
+    - "Mi formación en psicología y mi manera de leer con lápiz en mano se cruzan en todas las partes del club: en la selección de los cuentos, en los materiales que apuntan a aportar contexto y en la coordinación de los encuentros."
+    - "Trabajo para que la conversación abra preguntas sin imponer conclusiones. La idea es que cada persona se lleve algo propio: una manera nueva de mirar una historia, o un pedazo de su vida a la luz de la lectura."
+  sign: "— Entre-Tramas, La Plata."
+
+principios:
+  eyebrow: "Por diseño"
+  h2: "Pensado para leer más hondo."
+  aside: "Cuatro decisiones que sostienen el modo en que el club se lee y se conversa."
+  principles:
+    - title: "Sin cursada."
+      body: "Leés a tu ritmo y por cuenta propia: un cuento breve por semana es el único compromiso del calendario."
+    - title: "Sin lectura correcta."
+      body: "Cada encuentro suma miradas al mismo cuento y la conversación queda abierta: nadie la cierra con la respuesta final."
+    - title: "Sin terapia."
+      body: "La coordinación combina literatura y psicología para abrir preguntas. No promete resultados terapéuticos ni exige que nadie comparta lo personal."
+    - title: "Con identidad propia."
+      body: "La selección busca profundidad sin perder el disfrute: clásicos que dejan pensando y relatos distendidos para tomar con un mate."
+
+modalidades:
+  eyebrow: "Modalidades"
+  h2: "La misma lectura, dos escenarios."
+  aside: "La modalidad virtual es la principal: los materiales viajan digital y los encuentros reúnen a lectores de cualquier provincia."
+  copy:
+    - "El club arranca en formato virtual y abierto: cualquier parte del país, materiales digitales, encuentros por videollamada."
+    - "A la vez, se explora un grupo presencial reducido en La Plata, pensado para personas conocidas o recomendadas, con té y algo rico en la mesa. El formato, la frecuencia y el precio están todavía en definición."
+  aside2: "Si la presencial te tienta, dejá tu nombre por Instagram y avisamos cuando el grupo quede armado."
+  virtual:
+    title: "El club virtual"
+    sub: "La modalidad principal"
+    items:
+      - "Los cuatro cuentos del mes llegan por digital, con sus materiales."
+      - "Los encuentros quincenales se hacen por videollamada."
+      - "Se participa desde cualquier provincia."
+    note: "La conversación es en vivo y en grupo; el resto del mes, cada uno lee por su cuenta."
+  presencial:
+    title: "El club presencial"
+    sub: "La Plata · En definición"
+    items:
+      - "Grupo reducido, con personas conocidas o recomendadas."
+      - "Encuentros frente a frente, con té y algo rico."
+      - "Formato, frecuencia y precio: se confirman de a poco."
+    note: "Si te interesa, dejá tu nombre por Instagram y avisamos cuando el grupo quede armado."
+  panel_cta: "Consultá por Instagram"
+
+incluye:
+  eyebrow: "Qué incluye y cuánto cuesta"
+  h2: "Lo que llega cada mes."
+  aside: "Todo viaja digital: los encuentros se hacen por videollamada y la inscripción se coordina por Instagram."
+  rows:
+    - num: "4"
+      title: "Cuentos por mes"
+      body: "Uno por cada semana: relatos de ficción de distintas épocas y autores, siempre en formato breve."
+    - num: "4"
+      title: "Materiales de análisis"
+      body: "Cada cuento llega acompañado de un texto que aporta contexto, abre perspectivas y deja una o dos preguntas pendientes."
+    - num: "4"
+      title: "Infografías"
+      body: "Lo esencial de cada lectura condensado en una imagen, para revisar rápido antes de cada encuentro."
+    - num: "2"
+      title: "Encuentros quincenales"
+      body: "Por videollamada: se comparte lo que cada uno comprendió y se profundiza en la lectura con las miradas del grupo."
+
+precio:
+  eyebrow: "Precio"
+  cur: "$"
+  amount: "20.000"
+  unit: "/ mes"
+  body: "La cuota cubre los cuatro cuentos del mes, sus materiales complementarios y los encuentros quincenales. La inscripción y el pago se coordinan a mano, por Instagram."
+  note: "Las condiciones de participación se confirman al coordinar la inscripción, de manera clara y por adelantado."
+  cta_label: "Hacé tu consulta"
+  fine: "Valores en pesos argentinos"
+
+muestra:
+  eyebrow: "Muestra gratuita"
+  h2: "Probá el club antes de decidir."
+  lede: "Es la experiencia del club en miniatura: un cuento, su material de análisis, una infografía y un video breve de presentación. Lo pedís por Instagram, lo leés con calma y después decidís."
+  cta_label: "Pedí la muestra"
+  fine: "Sin costo · sin registro en esta página"
+  card_kicker: "La muestra contiene"
+  card_badge: "Gratis"
+  rows:
+    - { label: "El cuento", desc: "Completo" }
+    - { label: "El análisis", desc: "Para leerlo con contexto" }
+    - { label: "La infografía", desc: "De un vistazo" }
+    - { label: "El video", desc: "Cómo funciona el club" }
+
+stats:
+  - { value: "4", label: "Cuentos por mes" }
+  - { value: "2", label: "Encuentros por mes" }
+  - { value: "1", label: "Muestra gratuita" }
+  - { value: "3", unit: ":", value_after: "1", label: "Profundo por cada distendido" }
+
+faq:
+  eyebrow: "Preguntas"
+  h2: "Antes de sumarte."
+  aside: "La que falte, se responde por Instagram; por ahí llega también la muestra gratuita."
+  items:
+    - { q: "¿El club es para quien ya lee o para empezar?", a: "Para quien ya lee y quiere profundizar: no está pensado como iniciación a la lectura. Con leer el cuento de la semana y llevar las impresiones al encuentro alcanza." }
+    - { q: "¿Qué hay que hacer antes de cada encuentro?", a: "Leer el cuento y los materiales por cuenta propia. En el encuentro, cada uno comparte lo que comprendió; no se lee en voz alta ni hay entregas." }
+    - { q: "¿Qué incluye la muestra gratuita?", a: "Un cuento completo con su material de análisis y su infografía, más un video breve de presentación del club. Todo sin costo, sin otro paso que un mensaje directo." }
+    - { q: "¿Cómo se paga el club?", a: "A mano: se consulta por Instagram, se confirman las condiciones y se coordina la cuota. No hay pasarela de pago en esta página." }
+    - { q: "¿Y la modalidad presencial en La Plata?", a: "Se está armando un grupo reducido con personas conocidas o recomendadas, con té y algo rico. Formato, frecuencia y precio siguen en definición: quien le interese puede dejar su nombre por Instagram." }
+    - { q: "¿Cuándo arranca?", a: "La fecha todavía no está cerrada. La manera más simple de enterarse primero es seguir el club en Instagram: la muestra gratuita llega antes que el primer mes." }
+
+cierre:
+  eyebrow: "Contacto"
+  h2_pre: "El próximo cuento se lee mejor"
+  h2_em: "entre todos"
+  h2_post: "."
+  lede: "Escribí por Instagram para pedir la muestra gratuita, hacé una pregunta o reservá tu lugar: la inscripción se coordina a mano, con tiempo y calma."
+  cta_label: "Escribinos por Instagram"
+
+footer:
+  brand: "Entre-Tramas."
+  sub: "Club de lectura de cuentos · La Plata · Virtual"
+  links:
+    - { label: "La selección", href: "#seleccion" }
+    - { label: "Cómo funciona", href: "#como-funciona" }
+    - { label: "Sobre mí", href: "#sobre-mi" }
+    - { label: "Qué incluye", href: "#incluye" }
+    - { label: "Precio", href: "#precio" }
+    - { label: "Modalidades", href: "#modalidades" }
+    - { label: "Muestra gratuita", href: "#muestra" }
+    - { label: "Preguntas", href: "#preguntas" }
+  instagram_label: "Instagram ↗"
+  fine: "© 2026 Entre-Tramas · Sitio informativo: sin pagos ni inscripciones automáticas · Hecho para leer despacio"
