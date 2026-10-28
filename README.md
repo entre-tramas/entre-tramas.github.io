@@ -93,14 +93,27 @@ Todo el look se controla con las variables al inicio de `assets/css/site.css`:
 
 ```css
 :root {
-  --paper: #f4ede0;        /* fondo general */
-  --paper-alt: #ece2cf;    /* franjas alternadas */
-  --ink: #1a1814;          /* texto principal */
-  --wine: #8a2a1f;         /* acento principal */
-  --gold: #b8872a;         /* acento secundario */
-  --serif: 'Fraunces', …;
-  --sans: 'Inter', …;
-  --mono: 'JetBrains Mono', …;
+  /* Paleta base (los 6): #E5E1E7 #EFD7DF #D2C4D3 #B4B9C4 #A99EAA #99949F */
+  --plum-000: #E5E1E7;   /* lavanda claro — superficies tipo "papel" */
+  --plum-100: #EFD7DF;   /* rosa pálido — fondo de página */
+  --plum-200: #D2C4D3;   /* lila — bandas alternadas */
+  --plum-300: #B4B9C4;   /* pizarra fría — paneles / estantería */
+  --plum-400: #A99EAA;   /* lila medio — reglas suaves */
+  --plum-500: #99949F;   /* ciruela gris — reglas */
+
+  --paper: var(--plum-000);      /* cards */
+  --cream: var(--plum-100);      /* fondo general */
+  --cream-2: var(--plum-200);    /* bandas de sección */
+  --cream-3: var(--plum-300);    /* paneles */
+
+  /* textos: derivados oscuros de la misma familia (WCAG ≥ 4.5) */
+  --ink: #241F2B;
+  --ink-2: #332C3B;
+  --ink-3: #544C5E;
+
+  --oxblood: #3E2E48;    /* acento principal (plum profundo) */
+  --ochre: #7A4E6A;      /* acento secundario (rosa-plum) */
+  --moss: #3E4E63;       /* tono "distendido" (azul-pizarra) */
 }
 ```
 

@@ -1,26 +1,40 @@
 /* ==========================================================================
    Entre-Tramas · Club de lectura de cuentos
    Hallmark · macrostructure: Marquee Hero · H1 knobs: size=xxl, alignment=left
-   theme: Studio (book-paper) · accent: oxblood ~3% · studied: yes · DNA-source: url
+   theme: Bruma (plum-brume) · paleta base #E5E1E7 #EFD7DF #D2C4D3 #B4B9C4 #A99EAA #99949F · acento: aubergine ~3% · DNA-source: url
    source-url: https://thatbookclub.com/ · observed-fonts: Fraunces + Inter + JetBrains Mono
    rhythm: unknown (URL mode) — reconstructed from section archetypes
    ========================================================================== */
 
 /* --- Tokens (todo el sistema vive acá: cambiá la paleta en un solo lugar) -- */
 :root {
-  --cream: #f4ede0;
-  --cream-2: #ece3d2;
-  --cream-3: #e4d9c2;
-  --paper: #fbf6ec;
-  --ink: #1a1814;
-  --ink-2: #2c2822;
-  --ink-3: #5a524a;
-  --ink-4: #8a8077;
-  --rule: #d9cdb3;
-  --rule-soft: #e8dfca;
-  --ochre: #b8872a;
-  --oxblood: #8a2a1f;
-  --moss: #4a5d3a;
+  /* --- Paleta base: los 6 exactos (por orden de luminosidad) --- */
+  --plum-000: #E5E1E7;   /* lavanda claro — superficies tipo "papel" */
+  --plum-100: #EFD7DF;   /* rosa pálido — fondo de página */
+  --plum-200: #D2C4D3;   /* lila — bandas alternadas */
+  --plum-300: #B4B9C4;   /* pizarra fría — paneles / estantería */
+  --plum-400: #A99EAA;   /* lila medio — reglas suaves */
+  --plum-500: #99949F;   /* ciruela gris — reglas */
+
+  /* Superficies (misma jerarquía de antes, tintadas a la paleta) */
+  --paper: var(--plum-000);      /* lo más claro: cards flotan */
+  --cream: var(--plum-100);      /* fondo general / nav / tabs */
+  --cream-2: var(--plum-200);    /* bandas de sección */
+  --cream-3: var(--plum-300);    /* paneles con textura: estantería, sobre */
+
+  /* Texto: derivados MÁS OSCUROS de la misma familia (ninguno de los 6 llega a 4.5:1) */
+  --ink: #241F2B;        /* ciruela casi negro — texto principal */
+  --ink-2: #332C3B;      /* lede */
+  --ink-3: #544C5E;      /* texto apagado / labels */
+  --ink-4: #7E7890;      /* extra apagado (decorativo) */
+  --rule: var(--plum-500);
+  --rule-soft: var(--plum-400);
+
+  /* Acentos derivados (hue ciruela/lila; oscuros para contraste AA) */
+  --oxblood: #3E2E48;    /* acento principal (antiguo wine) */
+  --ochre: #7A4E6A;      /* acento secundario rosa-plum (antiguo dorado) */
+  --moss: #3E4E63;       /* tono "distendido" (azul-pizarra, de #B4B9C4) */
+  --lilac: var(--plum-200);
   --accent: var(--oxblood);
 
   --serif: 'Fraunces', 'Cambria', Georgia, serif;
@@ -250,8 +264,8 @@ h2 em { color: var(--oxblood); font-weight: 350; }
   color: var(--paper);
   border-bottom: none;
 }
-.section--dark .eyebrow { color: rgba(251, 246, 236, 0.62); }
-.section--dark .section-aside { color: rgba(251, 246, 236, 0.66); }
+.section--dark .eyebrow { color: rgba(229, 225, 231, 0.62); }
+.section--dark .section-aside { color: rgba(229, 225, 231, 0.66); }
 
 .section-head {
   display: flex;
@@ -326,7 +340,7 @@ h2 em { color: var(--oxblood); font-weight: 350; }
   border: 1px solid var(--rule);
   border-radius: var(--radius);
   padding: 20px 22px;
-  box-shadow: 0 18px 40px -30px rgba(40, 30, 20, 0.45);
+  box-shadow: 0 18px 40px -30px rgba(36, 31, 43, 0.45);
 }
 .mini-card--offset { margin-left: 64px; }
 .mini-kicker {
@@ -383,7 +397,7 @@ h2 em { color: var(--oxblood); font-weight: 350; }
   position: relative;
   transition: transform 160ms ease, box-shadow 160ms ease;
 }
-.book:hover { transform: translateY(-4px); box-shadow: 0 20px 36px -22px rgba(40, 30, 20, 0.4); }
+.book:hover { transform: translateY(-4px); box-shadow: 0 20px 36px -22px rgba(36, 31, 43, 0.4); }
 .book::before {
   content: '';
   position: absolute;
@@ -391,7 +405,7 @@ h2 em { color: var(--oxblood); font-weight: 350; }
   bottom: 0;
   left: 7px;
   width: 1px;
-  background: rgba(26, 24, 20, 0.14);
+  background: rgba(36, 31, 43, 0.16);
 }
 .book-author {
   font-family: var(--mono);
@@ -430,8 +444,8 @@ h2 em { color: var(--oxblood); font-weight: 350; }
   color: var(--ink-2);
   white-space: nowrap;
 }
-.tone--profundo { border-color: rgba(138, 42, 31, 0.45); color: var(--oxblood); }
-.tone--distendido { border-color: rgba(74, 93, 58, 0.5); color: var(--moss); }
+.tone--profundo { border-color: rgba(62, 46, 72, 0.45); color: var(--oxblood); }
+.tone--distendido { border-color: rgba(62, 78, 99, 0.5); color: var(--moss); }
 
 .book--cta {
   background: var(--paper);
@@ -507,7 +521,7 @@ h2 em { color: var(--oxblood); font-weight: 350; }
   background: var(--cream);
   border: 1px solid var(--rule);
   border-radius: var(--radius);
-  box-shadow: 0 24px 60px -24px rgba(40, 30, 20, 0.3);
+  box-shadow: 0 24px 60px -24px rgba(36, 31, 43, 0.3);
 }
 .tabbar {
   display: flex;
@@ -610,7 +624,7 @@ h2 em { color: var(--oxblood); font-weight: 350; }
   border: 1px solid var(--rule);
   border-radius: var(--radius);
   padding: 34px 34px 30px;
-  box-shadow: 0 24px 60px -24px rgba(40, 30, 20, 0.28);
+  box-shadow: 0 24px 60px -24px rgba(36, 31, 43, 0.28);
 }
 .price-value {
   display: flex;
@@ -644,7 +658,7 @@ h2 em { color: var(--oxblood); font-weight: 350; }
   border: 1px solid var(--rule);
   border-radius: var(--radius);
   padding: 26px 28px;
-  box-shadow: 0 24px 60px -24px rgba(40, 30, 20, 0.28);
+  box-shadow: 0 24px 60px -24px rgba(36, 31, 43, 0.28);
 }
 .sample-rows { margin: 0; }
 .sample-row {
@@ -727,11 +741,11 @@ h2 em { color: var(--oxblood); font-weight: 350; }
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0;
-  border-top: 1px solid rgba(244, 237, 224, 0.18);
+  border-top: 1px solid rgba(229, 225, 231, 0.18);
   margin-top: 56px;
 }
 .principle { padding: 34px 28px 38px 0; }
-.principle + .principle { padding-left: 28px; border-left: 1px solid rgba(244, 237, 224, 0.18); }
+.principle + .principle { padding-left: 28px; border-left: 1px solid rgba(229, 225, 231, 0.18); }
 .principle h3 {
   margin: 0 0 10px;
   font-weight: 420;
@@ -739,12 +753,12 @@ h2 em { color: var(--oxblood); font-weight: 350; }
   line-height: 1.2;
   font-variation-settings: "opsz" 144;
 }
-.principle h3 em { color: var(--ochre); font-style: normal; }
+.principle h3 em { color: var(--lilac); font-style: normal; }
 .principle p {
   margin: 0;
   font-size: 14px;
   line-height: 1.65;
-  color: rgba(251, 246, 236, 0.78);
+  color: rgba(229, 225, 231, 0.78);
   text-wrap: pretty;
 }
 
@@ -795,7 +809,7 @@ h2 em { color: var(--oxblood); font-weight: 350; }
   padding: 112px 0;
   text-align: center;
   background:
-    radial-gradient(ellipse 60% 80% at 50% 0%, var(--paper) 0%, rgba(251, 246, 236, 0) 70%),
+    radial-gradient(ellipse 60% 80% at 50% 0%, var(--paper) 0%, rgba(229, 225, 231, 0) 70%),
     var(--cream-2);
   border-bottom: none;
 }
@@ -847,7 +861,7 @@ h2 em { color: var(--oxblood); font-weight: 350; }
   font-weight: 500;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: rgba(244, 237, 224, 0.55);
+  color: rgba(229, 225, 231, 0.55);
 }
 .footer-col { max-width: 480px; }
 .footer-links {
@@ -858,7 +872,7 @@ h2 em { color: var(--oxblood); font-weight: 350; }
   font-style: italic;
   font-size: 15px;
 }
-.footer-links a { color: rgba(244, 237, 224, 0.75); text-decoration: none; }
+.footer-links a { color: rgba(229, 225, 231, 0.75); text-decoration: none; }
 .footer-links a:hover { color: var(--paper); }
 .footer-fine {
   margin-top: 18px;
@@ -866,7 +880,7 @@ h2 em { color: var(--oxblood); font-weight: 350; }
   font-size: 9.5px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(244, 237, 224, 0.4);
+  color: rgba(229, 225, 231, 0.5);
 }
 
 /* --- Página presencial (fallback sin JS) -------------------------------------- */
