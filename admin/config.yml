@@ -90,7 +90,7 @@ collections:
                   - { label: "Autor", name: author, widget: string }
                   - { label: "Título", name: title, widget: string }
                   - { label: "Año", name: year, widget: string }
-                  - { label: "Tono", name: tone, widget: select, options: [profundo, distendido] }
+                  - { label: "Tono", name: tone, widget: select, options: [Accesible, Intermedio, Desafiante] }
               - label: Tarjeta final (pedí tu cuento)
                 name: cta_card
                 widget: object
