@@ -54,8 +54,8 @@ mockboard:
       note: Un cuento por semana, dos encuentros por mes, y una historia leída desde varias miradas.
 seleccion:
   eyebrow: La selección
-  h2: Cuentos que van a cruzarla.
-  aside: 'Clásicos primero, con lugar para el relato distendido: la proporción apunta a tres cuentos de profundidad por cada uno más ligero.'
+  h2: Cuentos que nos esperan
+  aside: 'Clásicos y contemporáneos, con distintos niveles de complejidad. Cada mes, cuatro cuentos: uno accesible, dos de complejidad intermedia y uno más desafiante.'
   books:
     - author: Chéjov
       title: La dama del perrito
