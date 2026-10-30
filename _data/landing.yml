@@ -35,21 +35,21 @@ hero:
 mockboard:
   cards:
     - kicker: La entrega semanal
-      badge: Por mensaje
+      badge: Por mail
       rows:
         - label: El cuento
           text: un relato completo para leer por tu cuenta
         - label: El análisis
-          text: material para leerlo con contexto
+          text: material con claves de lectura
         - label: La infografía
-          text: lo esencial, de un vistazo
+          text: lo esencial, en formato visual
       note: ''
     - kicker: El encuentro quincenal
-      badge: Por video
+      badge: Por videollamada
       rows:
         - label: Antes
           text: se lee por cuenta propia, a tu ritmo
-        - label: Ahí
+        - label: Durante
           text: se comparte lo que comprendió cada uno
       note: Un cuento por semana, dos encuentros por mes, y una historia leída desde varias ventanas.
 seleccion:
