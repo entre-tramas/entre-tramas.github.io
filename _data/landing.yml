@@ -22,7 +22,7 @@ hero:
   h1_pre: Un club para leer cuentos
   h1_em: entre todos
   h1_post: '.'
-  lede: 'Cada semana llega un cuento nuevo, acompañado de un material de análisis y una infografía. Una vez al mes, un encuentro para compartir lo que cada uno comprendió: la misma historia, leída entre todos, revela nuevos sentidos.'
+  lede: 'Cada semana llega un nuevo cuento junto con su material de análisis y una infografía. Una vez al mes se produce el encuentro para compartir las diferentes miradas: una misma historia, puesta en común, revela nuevos sentidos.'
   ctas:
     - label: Pedí la muestra gratuita
       href: '#muestra'
