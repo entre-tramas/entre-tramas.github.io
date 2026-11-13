@@ -92,12 +92,12 @@ seleccion:
   cta_card:
     author: ¿Tu cuento?
     title: El más querido de tu estantería.
-    note: Sugerilo por Instagram
+    note: Sugerilo por Instagram o por mail
   note: 'Las portadas son ilustrativas: la lista definitiva se comparte con las personas del club.'
 como_funciona:
   eyebrow: Cómo funciona
   h2: Tres ritmos que se suman.
-  aside: El material se lee por cuenta propia y el encuentro es la única cita fija del calendario.
+  aside: El material se lee por cuenta propia y el encuentro mensual es la única cita fija a agendar
   features:
     - num: I.
       meta: Cada semana
@@ -106,7 +106,7 @@ como_funciona:
     - num: II.
       meta: A tu ritmo
       title: Se lee por cuenta propia.
-      body: 'Un cuento breve y materiales de una sola lectura, cuando te encuentre bien. Sin necesidad de leer en voz alta ni de estudiar como en un curso: con las impresiones listas alcanza.'
+      body: 'Un cuento y materiales de una sola lectura, cuando te quede bien. Sin necesidad de leer en voz alta ni de estudiar como en un curso: tomás nota de lo que te convoca para compartir en el encuentro.'
     - num: III.
       meta: Una vez al mes
       title: Luego, el encuentro.
