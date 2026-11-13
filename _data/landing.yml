@@ -38,11 +38,11 @@ mockboard:
       badge: Por mail
       rows:
         - label: El cuento
-          text: un relato completo para leer por tu cuenta
-        - label: El análisis
-          text: material con claves de lectura
+          text: un relato para leer por tu cuenta
+        - label: El material
+          text: análisis y claves de lectura
         - label: La infografía
-          text: lo esencial, en formato visual
+          text: una síntesis visual del relato
       note: ''
     - kicker: El encuentro quincenal
       badge: Por videollamada
