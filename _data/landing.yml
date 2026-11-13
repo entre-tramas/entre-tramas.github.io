@@ -22,7 +22,7 @@ hero:
   h1_pre: Un club para leer cuentos
   h1_em: entre todos
   h1_post: '.'
-  lede: 'Cada semana llega un cuento nuevo, acompañado de un material de análisis y una infografía. Cada quince días, un encuentro para compartir lo que cada uno comprendió: la misma historia, leída entre todos, revela nuevos sentidos.'
+  lede: 'Cada semana llega un cuento nuevo, acompañado de un material de análisis y una infografía. Una vez al mes, un encuentro para compartir lo que cada uno comprendió: la misma historia, leída entre todos, revela nuevos sentidos.'
   ctas:
     - label: Pedí la muestra gratuita
       href: '#muestra'
@@ -30,7 +30,7 @@ hero:
       href: '#como-funciona'
   chips:
     - label: 4 cuentos por mes
-    - label: Encuentros cada 15 días
+    - label: Encuentros mensuales
     - label: Materiales incluidos
 mockboard:
   cards:
@@ -51,7 +51,7 @@ mockboard:
           text: se lee por cuenta propia, a tu ritmo
         - label: Durante
           text: se comparte lo que comprendió cada uno
-      note: Un cuento por semana, dos encuentros por mes, y una historia leída desde varias miradas.
+      note: Un cuento por semana, un encuentro por mes, y una historia leída desde varias miradas.
 seleccion:
   eyebrow: La selección
   h2: Cuentos que nos esperan
@@ -108,15 +108,15 @@ como_funciona:
       title: Se lee por cuenta propia.
       body: 'Un cuento breve y materiales de una sola lectura, cuando te encuentre bien. Sin necesidad de leer en voz alta ni de estudiar como en un curso: con las impresiones listas alcanza.'
     - num: III.
-      meta: Cada 15 días
+      meta: Una vez al mes
       title: Luego, el encuentro.
       body: 'Por videollamada: cada participante comparte lo que comprendió. Las interpretaciones se cruzan, y del mismo cuento salen miradas distintas y alguna pregunta que va más allá de la página.'
 sobre_mi:
   eyebrow: Sobre mí
   h2: Quién coordina el club.
   paragraphs:
-    - 'Mi formación en psicología y mi manera de leer con lápiz en mano se cruzan en todas las partes del club: en la selección de los cuentos, en los materiales que apuntan a aportar contexto y en la coordinación de los encuentros.'
-    - 'Trabajo para que la conversación abra preguntas sin imponer conclusiones. La idea es que cada persona se lleve algo propio: una manera nueva de mirar una historia, o un pedazo de su vida a la luz de la lectura.'
+    - 'Mi formación en Psicología y mi manera de leer, atenta a los detalles del texto y a las preguntas que cada cuento abre, están presentes en todas las partes del club: en la selección de los cuentos, en los materiales que aportan contexto y en la coordinación de los encuentros.'
+    - 'Abro espacios para que la conversación genere preguntas sin imponer interpretaciones. El objetivo es cada persona se lleve algo propio: una manera nueva de mirar una historia, o un pedazo de su vida a la luz de la lectura.'
   sign: — Entre-Tramas, La Plata.
 principios:
   eyebrow: Por diseño
@@ -136,7 +136,7 @@ modalidades:
   h2: La misma lectura, dos escenarios.
   aside: 'La modalidad virtual es la principal: los materiales viajan digital y los encuentros reúnen a lectores de cualquier provincia.'
   copy:
-    - 'El club arranca en formato virtual y abierto: cualquier parte del país, materiales digitales, encuentros por videollamada.'
+    - 'El club comienza en formato virtual y abierto: se puede participar desde cualquier lugar, con materiales digitales y encuentros por videollamada.'
     - A la vez, se explora un grupo presencial reducido en La Plata, pensado para personas conocidas o recomendadas, con té y algo rico en la mesa. El formato, la frecuencia y el precio están todavía en definición.
   aside2: Si la presencial te tienta, dejá tu nombre por Instagram y avisamos cuando el grupo quede armado.
   virtual:
