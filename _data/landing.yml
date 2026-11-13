@@ -44,51 +44,51 @@ mockboard:
         - label: La infografía
           text: una síntesis visual del relato
       note: ''
-    - kicker: El encuentro quincenal
+    - kicker: El encuentro mensual
       badge: Por videollamada
       rows:
         - label: Antes
-          text: se lee por cuenta propia, a tu ritmo
+          text: leés por cuenta propia, a tu ritmo
         - label: Durante
-          text: se comparte lo que comprendió cada uno
+          text: compartís tu visión, intercambiamos ideas
       note: Un cuento por semana, un encuentro por mes, y una historia leída desde varias miradas.
 seleccion:
   eyebrow: La selección
   h2: Cuentos que nos esperan
-  aside: 'Clásicos y contemporáneos, con distintos niveles de complejidad. Cada mes, cuatro cuentos: uno accesible, dos de complejidad intermedia y uno más desafiante.'
+  aside: 'Clásicos y contemporáneos, con diferentes niveles de complejidad. Cada mes, cuatro cuentos: uno accesible, dos intermedios y uno desafiante.'
   books:
     - author: Chéjov
       title: La dama del perrito
       year: '1899'
-      tone: profundo
+      tone: Intermedio
     - author: Quiroga
       title: El almohadón de plumas
-      year: '1916'
-      tone: profundo
+      year: '1917'
+      tone: Accesible
     - author: Mansfield
       title: La fiesta del jardín
       year: '1922'
-      tone: distendido
+      tone: Intermedio
     - author: Kafka
       title: Ante la ley
-      year: '1919'
-      tone: profundo
+      year: '1915'
+      tone: Desafiante
     - author: Borges
       title: El sur
       year: '1953'
-      tone: profundo
+      tone: Desafiante
     - author: Rulfo
       title: No oyes ladrar los perros
-      year: '1951'
-      tone: profundo
+      year: '1953'
+      tone: Intermedio
     - author: Cortázar
       title: La casa tomada
       year: '1946'
-      tone: distendido
+      tone: Accesible
     - author: García Márquez
       title: Un señor muy viejo con unas alas enormes
       year: '1968'
-      tone: distendido
+      tone: Intermedio
   cta_card:
     author: ¿Tu cuento?
     title: El más querido de tu estantería.
