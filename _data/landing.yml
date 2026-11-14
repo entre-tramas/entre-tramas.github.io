@@ -102,15 +102,15 @@ como_funciona:
     - num: I.
       meta: Cada semana
       title: Llega un cuento nuevo.
-      body: 'Por mensaje digital: el relato completo de un autor clásico o contemporáneo, con un material de análisis para leerlo con contexto y una infografía con lo esencial.'
+      body: 'Por mail: el cuento de un autor clásico o contemporáneo, material complementario de análisis y una infografía con una síntesis visual del relato.'
     - num: II.
       meta: A tu ritmo
       title: Se lee por cuenta propia.
-      body: 'Un cuento y materiales de una sola lectura, cuando te quede bien. Sin necesidad de leer en voz alta ni de estudiar como en un curso: tomás nota de lo que te convoca para compartir en el encuentro.'
+      body: 'Cada cuento se lee individualmente, en el momento y al ritmo que prefieras. No hay lecturas en voz alta ni evaluaciones: la idea es disfrutar de la lectura, detenerse en aquello que despierta interés y tomar nota de las ideas o preguntas que quieras compartir en el encuentro.'
     - num: III.
       meta: Una vez al mes
       title: Luego, el encuentro.
-      body: 'Por videollamada: cada participante comparte lo que comprendió. Las interpretaciones se cruzan, y del mismo cuento salen miradas distintas y alguna pregunta que va más allá de la página.'
+      body: 'Por videollamada: cada participante comparte su lectura e interpretación del cuento. Las miradas se cruzan y, de una misma historia, surgen perspectivas diferentes, nuevas preguntas y reflexiones.'
 sobre_mi:
   eyebrow: Sobre mí
   h2: Quién coordina el club.
