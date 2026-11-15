@@ -120,15 +120,15 @@ sobre_mi:
   sign: — Entre-Tramas, La Plata.
 principios:
   eyebrow: Por diseño
-  h2: Pensado para leer más hondo.
-  aside: Cuatro decisiones que sostienen el modo en que el club se lee y se conversa.
+  h2: El espíritu de Entre-Tramas
+  aside: Cuatro principios que orientan el Club de Lectura
   principles:
     - title: Sin cursada.
-      body: 'Leés a tu ritmo y por cuenta propia: un cuento breve por semana es el único compromiso del calendario.'
+      body: La lectura es individual y cada participante elige cuándo y cómo leer. Un cuento por semana, sin horarios fijos ni exigencias académicas
     - title: Sin lectura correcta.
-      body: 'Cada encuentro suma miradas al mismo cuento y la conversación queda abierta: nadie la cierra con la respuesta final.'
+      body: 'Cada encuentro suma nuevas miradas sobre un mismo cuento. La conversación queda abierta: no hay una respuesta definitiva ni una interpretación que se imponga sobre las demás'
     - title: Sin terapia.
-      body: La coordinación combina literatura y psicología para abrir preguntas. No promete resultados terapéuticos ni exige que nadie comparta lo personal.
+      body: La literatura y la psicología se encuentran en la coordinación para enriquecer la lectura y abrir preguntas. No es un espacio terapéutico ni requiere compartir experiencias personales.
     - title: Con identidad propia.
       body: 'La selección busca profundidad sin perder el disfrute: clásicos que dejan pensando y relatos distendidos para tomar con un mate.'
 modalidades:
