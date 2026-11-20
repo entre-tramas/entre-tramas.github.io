@@ -57,38 +57,38 @@ seleccion:
   h2: Cuentos que nos esperan
   aside: 'Clásicos y contemporáneos, con diferentes niveles de complejidad. Cada mes, cuatro cuentos: uno accesible, dos intermedios y uno desafiante.'
   books:
-    - author: Chéjov
-      title: La dama del perrito
-      year: '1899'
-      tone: Intermedio
-    - author: Quiroga
-      title: El almohadón de plumas
-      year: '1917'
+    - author: Guy de Maupassant
+      title: El collar
+      year: '1884'
       tone: Accesible
-    - author: Mansfield
+    - author: Katherine Mansfield
       title: La fiesta del jardín
       year: '1922'
       tone: Intermedio
-    - author: Kafka
-      title: Ante la ley
-      year: '1915'
-      tone: Desafiante
     - author: Borges
-      title: El sur
-      year: '1953'
+      title: El jardín de senderos que se bifurcan
+      year: '1941'
       tone: Desafiante
-    - author: Rulfo
-      title: No oyes ladrar los perros
-      year: '1953'
+    - author: Silvina Ocampo
+      title: Las invitadas
+      year: '1961'
+      tone: Desafiante
+    - author: Patricia Highsmith
+      title: A merced del viento
+      year: '1975'
+      tone: Desafiante
+    - author: Adolfo Bioy Casares
+      title: El calamar opta por su tinta
+      year: '1978'
       tone: Intermedio
-    - author: Cortázar
-      title: La casa tomada
-      year: '1946'
-      tone: Accesible
-    - author: García Márquez
-      title: Un señor muy viejo con unas alas enormes
-      year: '1968'
+    - author: Kjell Askildsen
+      title: Los perros de Tesalónica
+      year: '1996'
       tone: Intermedio
+    - author: Mariana Enriquez
+      title: Mis muertos tristes
+      year: '2004'
+      tone: Desafiante
   cta_card:
     author: ¿Tu cuento?
     title: El más querido de tu estantería.
