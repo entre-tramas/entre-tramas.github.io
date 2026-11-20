@@ -138,15 +138,15 @@ modalidades:
   copy:
     - 'El club comienza en formato virtual y abierto: se puede participar desde cualquier lugar, con materiales digitales y encuentros por videollamada.'
     - A la vez, se explora un grupo presencial reducido en La Plata, pensado para personas conocidas o recomendadas, con té y algo rico en la mesa. El formato, la frecuencia y el precio están todavía en definición.
-  aside2: Si la presencial te tienta, dejá tu nombre por Instagram y avisamos cuando el grupo quede armado.
+  aside2: Si la presencial  te interesa, dejá tu nombre por Instagram y te avisaré cuando el grupo quede armado.
   virtual:
     title: El club virtual
     sub: La modalidad principal
     items:
       - Los cuatro cuentos del mes llegan por digital, con sus materiales.
-      - Los encuentros quincenales se hacen por videollamada.
+      - El encuentro mensual se hace por videollamada.
       - Se participa desde cualquier provincia.
-    note: La conversación es en vivo y en grupo; el resto del mes, cada uno lee por su cuenta.
+    note: La conversación es grupal, virtual y sincrónica; el resto del mes, cada uno lee por su cuenta.
   presencial:
     title: El club presencial
     sub: La Plata · En definición
@@ -159,7 +159,7 @@ modalidades:
 incluye:
   eyebrow: Qué incluye y cuánto cuesta
   h2: Lo que llega cada mes.
-  aside: 'Todo viaja digital: los encuentros se hacen por videollamada y la inscripción se coordina por Instagram.'
+  aside: 'Todo por vía digital: los encuentros se hacen por videollamada y la inscripción se coordina por Instagram o por mail'
   rows:
     - num: '4'
       title: Cuentos por mes
@@ -178,7 +178,7 @@ precio:
   cur: $
   amount: '20.000'
   unit: / mes
-  body: La cuota cubre los cuatro cuentos del mes, sus materiales complementarios y los encuentros quincenales. La inscripción y el pago se coordinan a mano, por Instagram.
+  body: La cuota cubre los cuatro cuentos del mes, sus materiales complementarios y el encuentro mensual. La inscripción y el pago se coordinan vía Instagram o vía mail
   note: Las condiciones de participación se confirman al coordinar la inscripción, de manera clara y por adelantado.
   cta_label: Hacé tu consulta
   fine: Valores en pesos argentinos
@@ -204,18 +204,18 @@ stats:
     unit: ''
     value_after: ''
     label: Cuentos por mes
-  - value: '2'
+  - value: '1'
     unit: ''
     value_after: ''
-    label: Encuentros por mes
+    label: Encuentro por mes
   - value: '1'
     unit: ''
     value_after: ''
     label: Muestra gratuita
-  - value: '3'
+  - value: '1'
     unit: ':'
-    value_after: '1'
-    label: Profundo por cada distendido
+    value_after: '2'
+    label: 1 Accesible 2 Intermedios 1 Desafiante
 faq:
   eyebrow: Preguntas
   h2: Antes de sumarte.
@@ -238,8 +238,8 @@ cierre:
   h2_pre: El próximo cuento se lee mejor
   h2_em: entre todos
   h2_post: '.'
-  lede: 'Escribí por Instagram para pedir la muestra gratuita, hacé una pregunta o reservá tu lugar: la inscripción se coordina a mano, con tiempo y calma.'
-  cta_label: Escribinos por Instagram
+  lede: 'Escribí por Instagram o por mail para pedir la muestra gratuita, hacé una pregunta o reservá tu lugar: la inscripción se coordina a mano, con tiempo y calma.'
+  cta_label: Escribinos por Instagram/Mail
 footer:
   brand: Entre-Tramas.
   sub: Club de lectura de cuentos · La Plata · Virtual
