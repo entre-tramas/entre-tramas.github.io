@@ -102,11 +102,11 @@ como_funciona:
     - num: I.
       meta: Cada semana
       title: Llega un cuento nuevo.
-      body: 'Por mail: el cuento de un autor clásico o contemporáneo, material complementario de análisis y una infografía con una síntesis visual del relato.'
+      body: 'Por mail: recibís el relato de un autor clásico o contemporáneo, material complementario de análisis y una infografía con una síntesis visual del relato.'
     - num: II.
       meta: A tu ritmo
       title: Se lee por cuenta propia.
-      body: 'Cada cuento se lee individualmente, en el momento y al ritmo que prefieras. No hay lecturas en voz alta ni evaluaciones: la idea es disfrutar de la lectura, detenerse en aquello que despierta interés y tomar nota de las ideas o preguntas que quieras compartir en el encuentro.'
+      body: 'A tu tiempo: leés el relato en el momento y al ritmo que prefieras. No hay lecturas en voz alta ni evaluaciones: la idea es disfrutar de la lectura, detenerse en aquello que despierta interés y tomar nota de las ideas o preguntas que quieras compartir en el encuentro.'
     - num: III.
       meta: Una vez al mes
       title: Luego, el encuentro.
@@ -116,7 +116,7 @@ sobre_mi:
   h2: Quién coordina el club.
   paragraphs:
     - 'Mi formación en Psicología y mi manera de leer, atenta a los detalles del texto y a las preguntas que cada cuento abre, están presentes en todas las partes del club: en la selección de los cuentos, en los materiales que aportan contexto y en la coordinación de los encuentros.'
-    - 'Abro espacios para que la conversación genere preguntas sin imponer interpretaciones. El objetivo es cada persona se lleve algo propio: una manera nueva de mirar una historia, o un pedazo de su vida a la luz de la lectura.'
+    - 'Abro espacios para que la conversación genere preguntas sin imponer interpretaciones. El objetivo es cada persona se lleve algo propio: una manera nueva de mirar una historia, una pregunta (o más), algo valioso para su vida, además de la valiosa experiencia de compartir la pasión por la lectura con otros.'
   sign: — Entre-Tramas, La Plata.
 principios:
   eyebrow: Por diseño
@@ -128,9 +128,9 @@ principios:
     - title: Sin lectura correcta.
       body: 'Cada encuentro suma nuevas miradas sobre un mismo cuento. La conversación queda abierta: no hay una respuesta definitiva ni una interpretación que se imponga sobre las demás'
     - title: Sin terapia.
-      body: La literatura y la psicología se encuentran en la coordinación para enriquecer la lectura y abrir preguntas. No es un espacio terapéutico ni requiere compartir experiencias personales.
+      body: Si bien el abordaje de los cuentos incorpora una perspectiva psicológica, el club no es un espacio terapéutico ni requiere compartir experiencias personales.
     - title: Con identidad propia.
-      body: 'La selección busca profundidad sin perder el disfrute: clásicos que dejan pensando y relatos distendidos para tomar con un mate.'
+      body: 'La selección busca profundizar sin perder el disfrute: cuentos que invitan a reflexionar y otros que se leen con una sonrisa.'
 modalidades:
   eyebrow: Modalidades
   h2: La misma lectura, dos escenarios.
